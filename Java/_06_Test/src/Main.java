@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        Cynapp cynapp = new Cynapp();
         Beamer beamer = new Beamer();
         Device airPlay1 = new AirPlay();
         Device miracast2 = new Miracast();
@@ -8,15 +9,15 @@ public class Main {
         beamer.show(airPlay1.getContent());
         beamer.show(miracast2.getContent());
 
-        Cynapp.addDevice(airPlay1);
-        Cynapp.addDevice(miracast2);
-        Cynapp.addDevice(airPlay2);
-        Cynapp.addDevice(miracast1);
+        cynapp.addDevice(airPlay1);
+        cynapp.addDevice(miracast2);
+        cynapp.addDevice(airPlay2);
+        cynapp.addDevice(miracast1);
 
-        Cynapp.showDevice(0);
-        Cynapp.showDevice(2);
-        Cynapp.showDevice(1);
-        Cynapp.showDevice(3);
+        cynapp.showDevice(0);
+        cynapp.showDevice(2);
+        cynapp.showDevice(1);
+        cynapp.showDevice(3);
     }
 
 
