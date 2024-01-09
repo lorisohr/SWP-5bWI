@@ -5,7 +5,7 @@ public class AirPlay implements Device{
     }
 
     public String getContent() {
-        return "AirPlayy";
+        return "AirPlay";
     }
 
 }

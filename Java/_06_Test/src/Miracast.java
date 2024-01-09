@@ -3,6 +3,6 @@ public class Miracast implements Device{
         return false;
     }
     public String getContent() {
-        return "Miracastt";
+        return "Miracast";
     }
 }

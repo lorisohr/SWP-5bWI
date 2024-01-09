@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cynapp {
+
+    Beamer beamer = new Beamer();
+
     private List<Device> Devices = new ArrayList<Device>();
 
     public void addDevice(Device device) {
@@ -14,6 +17,6 @@ public class Cynapp {
     }
 
     public void showDevice(int i){
-        System.out.println(Devices.get(i).getContent());
+        beamer.show(Devices.get(i).getContent());
     }
 }
